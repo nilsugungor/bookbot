@@ -12,11 +12,8 @@ def main():
     print("----------- Word Count ----------")
     print(f"Found {num_words} total words")
     print("--------- Character Count -------")
-    #print(num_chars)
-    #print(sort_list)
     for chars in sort_list:
         print(f"{chars['char']}: {chars['num']}")
-    
     print("============= END ===============")
 
 def get_book_text(path):

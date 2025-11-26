@@ -26,7 +26,4 @@ def sort_dict(char_dict):
             new_dict[char] = char_dict[char]
     char_list = [{"char": k, "num": v} for k, v in new_dict.items()]
     char_list.sort(reverse=True, key=sort_on)
-    #for chars in sort_list:
-        #print(f"{chars["char"]}: {chars["num"]}")
-    
     return char_list
