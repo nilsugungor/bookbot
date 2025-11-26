@@ -12,5 +12,3 @@ Run the script with the path to your text file as an argument:
 
 ```bash
 python3 main.py <path_to_book>
-
-[Boot.dev](https://www.boot.dev)
