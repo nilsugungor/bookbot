@@ -15,3 +15,18 @@ def count_characters(path):
         else:
             char_dict[character] = 1
     return char_dict
+
+def sort_on(items):
+    return items["num"]
+
+def sort_dict(char_dict):
+    new_dict = {}
+    for char in char_dict:
+        if char.isalpha():
+            new_dict[char] = char_dict[char]
+    char_list = [{"char": k, "num": v} for k, v in new_dict.items()]
+    char_list.sort(reverse=True, key=sort_on)
+    #for chars in sort_list:
+        #print(f"{chars["char"]}: {chars["num"]}")
+    
+    return char_list
